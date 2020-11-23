@@ -148,7 +148,7 @@ export default {
         }
     },
     created(){
-        axios.get("https://educationdatabase67.pythonanywhere.com/viewcost")
+        axios.get("https://educationdb67.pythonanywhere.comviewcost")
         .then(
             reponse => {
                 this.desserts = reponse.data
@@ -157,7 +157,7 @@ export default {
     },
     methods: {
         submit(){
-            axios.post("https://educationdatabase67.pythonanywhere.com/ordercalc",{
+            axios.post("https://educationdb67.pythonanywhere.comordercalc",{
                 "air":this.air,"shipping":this.shipping,"insurance":this.insurance,
                 "erate":this.erate,"other":this.other,"rateoption":this.rateoption
             })

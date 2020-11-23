@@ -173,7 +173,7 @@ export default {
       }
     },
     created() {
-      axios.get("https://educationdatabase67.pythonanywhere.com/viewinventory")
+      axios.get("https://educationdb67.pythonanywhere.comviewinventory")
       .then(
         response => {
           this.desserts = response.data;
@@ -193,7 +193,7 @@ export default {
           fd.append('foo', 'bar')
           fd.append('file', this.file)
          
-          axios.post("https://educationdatabase67.pythonanywhere.com/addinventory", fd)
+          axios.post("https://educationdb67.pythonanywhere.comaddinventory", fd)
             .then(response => {
             //console.log(response)
             window.location.reload()
