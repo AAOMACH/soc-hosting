@@ -1,0 +1,1 @@
+@media all{printed-div{display:none}}@media print{printed-div{display:block}.logo-print{width:10px;height:10px;display:list-item;list-style-image:url(../img/ECLOGO.24ce5b97.jpg);list-style-position:inside;opacity:.1;filter:alpha(opacity=50)}}
