@@ -20,7 +20,7 @@
 
                         <v-card-actions>
                         <v-btn text @click="movetoinventorycontrol()"
-                        color="primary">
+                        color="teal">
                             View
                         </v-btn>
                         </v-card-actions>
@@ -49,7 +49,7 @@
                             <v-btn
                                 v-if="item.artist === 'ORDERING, TRACKING AND COSTING ANALYSIS'"
                                 @click="movetostocktracking()"
-                                color="primary"
+                                color="teal"
                                 
                             >
                                 <!--<v-icon>mdi-play</v-icon>-->
@@ -60,7 +60,7 @@
                                 v-else
                                 small
                                 @click="movetowarehousing()"
-                                color="primary"
+                                color="teal"
                             >
                                 VIEW
                             </v-btn>
