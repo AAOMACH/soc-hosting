@@ -88,6 +88,7 @@
                     <td class="text-xs-right">{{ props.item.AUG_SoldQTY }}</td>
                     <td class="text-xs-right">{{ props.item.SEP_SoldQTY }}</td>
                     <td class="text-xs-right">{{ props.item.OCT_SoldQTY }}</td>
+                    <td class="text-xs-right">{{ props.item.Total_Sold }}</td>
                     <td class="text-xs-right">{{ props.item.SoldForLast3Months }}</td>
                     <td class="text-xs-right">{{ props.item.Sold_M_Recent3Months }}</td>
                     <td class="text-xs-right">{{ props.item.Hits }}</td>
@@ -157,6 +158,7 @@ export default {
           { text: 'AUG_SoldQTY', value: 'AUG_SoldQTY' },
           { text: 'SEP_SoldQTY', value: 'SEP_SoldQTY' },
           { text: 'OCT_SoldQTY', value: 'OCT_SoldQTY' },
+          { text: 'Total_Sold', value: 'Total_Sold' },
           { text: 'SoldForLast3Months', value: 'SoldForLast3Months' },
           { text: 'Sold_M_Recent3Months', value: 'Sold_M_Recent3Months' },
           { text: 'Hits', value: 'Hits' },
