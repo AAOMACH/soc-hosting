@@ -1,6 +1,6 @@
 <template>
     <v-app>
-	   <v-card class="#dee9ff" style="background-color:#dee9ff;margin-top:0px" width="100%" height="100%">
+	   <v-card class="#dee9ff" style="background-color:#fffff;margin-top:0px" width="100%" height="100%">
       <v-content  class="mx-1 mb-1">
 			  <router-view />  
       </v-content>

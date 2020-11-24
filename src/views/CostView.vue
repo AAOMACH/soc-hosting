@@ -88,6 +88,7 @@
                         <td class="text-xs-right">{{ props.item.IMP_Duty }}</td>
                         <td class="text-xs-right">{{ props.item.Infrastructure_levy }}</td>
                         <td class="text-xs-right">{{ props.item.Withholding_tax }}</td>
+                        <td class="text-xs-right">{{ props.item.VAT }}</td>
                         <td class="text-xs-right">{{ props.item.Total }}</td>
                         <td class="text-xs-right">{{ props.item.LCF }}</td>
                         
@@ -148,7 +149,7 @@ export default {
         }
     },
     created(){
-        axios.get("https://educationdb67.pythonanywhere.comviewcost")
+        axios.get("https://educationdb67.pythonanywhere.com/viewcost")
         .then(
             reponse => {
                 this.desserts = reponse.data
@@ -157,10 +158,15 @@ export default {
     },
     methods: {
         submit(){
-            axios.post("https://educationdb67.pythonanywhere.comordercalc",{
-                "air":this.air,"shipping":this.shipping,"insurance":this.insurance,
+            axios.post("https://educationdb67.pythonanywhere.com/ordercalc",{
+                "air":this.air,"shipping":this.shipping,"newinsurance":this.Insurance,
                 "erate":this.erate,"other":this.other,"rateoption":this.rateoption
             })
+            .then( response => {
+                window.location.reload()
+            }
+                
+            )
         }
     },
 }
