@@ -9,17 +9,17 @@
         <v-card class="ma-5">
             <v-text-field
             class="ma-3"
-            label="Air Freight"
+            label="Air Freight (USD)"
             v-model="air"
             ></v-text-field>
             <v-text-field
             class="ma-3"
-            label="Shipping Cost"
+            label="Shipping Cost (USD)"
             v-model="shipping"
           ></v-text-field>
           <v-text-field
             class="ma-3"
-            label="Insurance"
+            label="Insurance (USD)"
             v-model="Insurance"
           ></v-text-field>
           <v-text-field
@@ -29,13 +29,13 @@
           ></v-text-field>
           <v-text-field
             class="ma-3"
-            label="Other Cost"
+            label="Other Cost (USD)"
             v-model="other"
           ></v-text-field>
           <v-select
           class="ma-3"
           :items="items"
-          label="Rate Option"
+          label="Rate Option (Import Duty Rate)"
           v-model="rateoption"
             ></v-select>
 
@@ -159,7 +159,7 @@
             </v-layout>
         </v-card>
 
-            <template>
+            <!--<template>
                 <v-card class="ma-5">
                     
                     <v-card-title>
@@ -200,7 +200,7 @@
                     </template>
                     </v-data-table>
                 </v-card>
-            </template>
+            </template>-->
         
     </div>
 </template>
