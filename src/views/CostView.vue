@@ -59,101 +59,112 @@
         <v-card>
             <v-card-title>Costing</v-card-title>
             <v-layout row wrap>
-
+                <v-divider></v-divider>
                 <v-flex xs6 md6>
-                    <div class="ma-2"> FOB</div>
+                    <div class="ma-3"> FOB</div>
                     
                 </v-flex>
                 <v-flex xs6 md6>
-                    <div class="ma-2">{{desserts.FOB}}</div>
+                    <div class="ma-3">{{desserts.FOB}}</div>
                 </v-flex>
+                <v-divider></v-divider>
                 <v-flex xs6 md6>
-                    <div class="ma-2"> Air_Freight_charge</div>
+                    <div class="ma-3"> Air_Freight_charge</div>
                     
                 </v-flex>
                 <v-flex xs6 md6>
-                    <div class="my-2">{{desserts.Air_Freight_charge}}</div>
+                    <div class="ma-3">{{desserts.Air_Freight_charge}}</div>
                 </v-flex>
+                <v-divider></v-divider>
                 <v-flex xs6 md6>
-                    <div class="my-2"> Shipping_Agency_Fee</div>
+                    <div class="ma-3"> Shipping_Agency_Fee</div>
                     
                 </v-flex>
                 <v-flex xs6 md6>
-                    <div class="my-2">{{desserts.Shipping_Agency_Fee}}</div>
+                    <div class="ma-3">{{desserts.Shipping_Agency_Fee}}</div>
                 </v-flex>
+                <v-divider></v-divider>
                 
-                
                 <v-flex xs6 md6>
-                    <div class="my-2"> CI</div>
+                    <div class="ma-3"> CI</div>
                     
                 </v-flex>
                 <v-flex xs6 md6>
-                    <div class="my-2">{{desserts.CI}}</div>
+                    <div class="ma-3">{{desserts.CI}}</div>
                 </v-flex>
+                <v-divider></v-divider>
                 <v-flex xs6 md6>
-                    <div class="my-2"> CIF</div>
+                    <div class="ma-3"> CIF</div>
                     
                 </v-flex>
                 <v-flex xs6 md6>
-                    <div class="my-2">{{desserts.CIF}}</div>
+                    <div class="ma-3">{{desserts.CIF}}</div>
                 </v-flex>
+                <v-divider></v-divider>
                 <v-flex xs6 md6>
-                    <div class="my-2"> Exchange_Rate</div>
+                    <div class="ma-3"> Exchange_Rate</div>
                     
                 </v-flex>
                 <v-flex xs6 md6>
-                    <div class="my-2">{{desserts.Exchange_Rate}}</div>
+                    <div class="ma-3">{{desserts.Exchange_Rate}}</div>
                 </v-flex>
+                <v-divider></v-divider>
                 <v-flex xs6 md6>
-                    <div class="my-2"> Other_Charges</div>
+                    <div class="ma-3"> Other_Charges</div>
                     
                 </v-flex>
                 <v-flex xs6 md6>
-                    <div class="my-2">{{desserts.Other_Charges}}</div>
+                    <div class="ma-3">{{desserts.Other_Charges}}</div>
                 </v-flex>
+                <v-divider></v-divider>
                 <v-flex xs6 md6>
-                    <div class="my-2"> IMP_Duty</div>
+                    <div class="ma-3"> IMP_Duty</div>
                     
                 </v-flex>
                 <v-flex xs6 md6>
-                    <div class="my-2">{{desserts.IMP_Duty}}</div>
+                    <div class="ma-3">{{desserts.IMP_Duty}}</div>
                 </v-flex>
+                <v-divider></v-divider>
                 <v-flex xs6 md6>
-                    <div class="my-2"> Infrastructure_levy</div>
+                    <div class="ma-3"> Infrastructure_levy</div>
                     
                 </v-flex>
                 <v-flex xs6 md6>
-                    <div class="my-2">{{desserts.Infrastructure_levy}}</div>
+                    <div class="ma-3">{{desserts.Infrastructure_levy}}</div>
                 </v-flex>
+                <v-divider></v-divider>
                 <v-flex xs6 md6>
-                    <div class="my-2"> Withholding_tax</div>
+                    <div class="ma-3"> Withholding_tax</div>
                     
                 </v-flex>
                 <v-flex xs6 md6>
-                    <div class="my-2">{{desserts.Withholding_tax}}</div>
+                    <div class="ma-3">{{desserts.Withholding_tax}}</div>
                 </v-flex>
+                <v-divider></v-divider>
                 <v-flex xs6 md6>
-                    <div class="my-2"> VAT</div>
+                    <div class="ma-3"> VAT</div>
                     
                 </v-flex>
                 <v-flex xs6 md6>
-                    <div class="my-2">{{desserts.VAT}}</div>
+                    <div class="ma-3">{{desserts.VAT}}</div>
                 </v-flex>
-
+                <v-divider></v-divider>
                 <v-flex xs6 md6>
-                    <div class="my-2"> Total</div>
+                    <div class="ma-3"> Total</div>
                     
                 </v-flex>
                 <v-flex  xs6 md6>
-                    <div class="my-2">{{desserts.FOB}}</div>
+                    <div class="ma-3">{{desserts.FOB}}</div>
                 </v-flex>
+                <v-divider></v-divider>
                 <v-flex xs6 md6>
-                    <div class="my-2"> LCF</div>
+                    <div class="ma-3"> LCF</div>
                     
                 </v-flex>
                 <v-flex  xs6 md6>
-                    <div class="my-2">{{desserts.LCF}}</div>
+                    <div class="ma-3">{{desserts.LCF}}</div>
                 </v-flex>
+                <v-divider></v-divider>
                 
 
             </v-layout>
@@ -247,6 +258,19 @@ export default {
             desserts: [
             
             ],
+            fob: "",
+            air: "",
+            shipping:"",
+            ci:"",
+            cif:"",
+            erate:"",
+            other:"",
+            imp:"",
+            Infrastructure:"",
+            withholding:"",
+            vat:"",
+            total:"",
+            lcf:"",
 
 
         }
@@ -255,7 +279,8 @@ export default {
         axios.get("https://educationdb67.pythonanywhere.com/viewcost")
         .then(
             reponse => {
-                this.desserts = reponse.data
+                //this.desserts = reponse.data
+                this.fob = response.data.FOB
             }
         )
     },
