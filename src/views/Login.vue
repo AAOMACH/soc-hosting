@@ -173,15 +173,16 @@ import axios from 'axios'
     },
     methods: {
     login: function () {
-      let username = this.username
-      let password = this.password
+      let username = this.username;
+      let password = this.password;
+      console.log("here");
       this.$store.dispatch('loginuser', { username, password })
-        //.then(() => this.$router.push('/dashboard'))
-        //.catch(err => {
-        //console.log(err)
-        //this.snackbar= true
-        //}
-        //)
+        .then(() => this.$router.push('/dashboard'))
+        .catch(err => {
+        console.log(err)
+        this.snackbar= true
+        }
+      )
     }
   }
   }
