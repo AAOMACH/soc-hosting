@@ -65,7 +65,7 @@
                     
                 </v-flex>
                 <v-flex xs6 md6>
-                    <div class="ma-3">{{desserts.FOB}}</div>
+                    <div class="ma-3">{{fob}}</div>
                 </v-flex>
                 <v-divider></v-divider>
                 <v-flex xs6 md6>
