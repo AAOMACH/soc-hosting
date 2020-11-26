@@ -61,14 +61,14 @@
             <v-layout row wrap>
 
                 <v-flex xs6 md6>
-                    <div class="my-2"> FOB</div>
+                    <div class="ma-2"> FOB</div>
                     
                 </v-flex>
                 <v-flex xs6 md6>
-                    <div class="my-2">{{desserts.FOB}}</div>
+                    <div class="ma-2">{{desserts.FOB}}</div>
                 </v-flex>
                 <v-flex xs6 md6>
-                    <div class="my-2"> Air_Freight_charge</div>
+                    <div class="ma-2"> Air_Freight_charge</div>
                     
                 </v-flex>
                 <v-flex xs6 md6>
