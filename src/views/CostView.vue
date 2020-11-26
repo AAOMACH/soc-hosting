@@ -59,112 +59,113 @@
         <v-card flat class="white" v-for="(dessert,index) in desserts" :key="dessert.id">
             <v-card-title>Costing</v-card-title>
             <v-layout row wrap>
-                <v-divider></v-divider>
-                <v-flex xs6 md6>
+                
+                <v-flex xs3 md3>
                     <div class="ma-3"> FOB</div>
                     
                 </v-flex>
-                <v-flex xs6 md6>
+                <v-flex xs9 md9>
                     <div class="ma-3">{{dessert.FOB}}</div>
                 </v-flex>
-                <v-divider></v-divider>
-                <v-flex xs6 md6>
+             
+                <v-flex xs3 md3>
                     <div class="ma-3"> Air_Freight_charge</div>
                     
                 </v-flex>
-                <v-flex xs6 md6>
-                    <div class="ma-3">{{desserts.Air_Freight_charge}}</div>
+                <v-flex xs9 md9>
+                    <div class="ma-3">{{dessert.Air_Freight_charge}}</div>
                 </v-flex>
-                <v-divider></v-divider>
-                <v-flex xs6 md6>
+            
+                <v-flex xs3 md3>
                     <div class="ma-3"> Shipping_Agency_Fee</div>
                     
                 </v-flex>
-                <v-flex xs6 md6>
-                    <div class="ma-3">{{desserts.Shipping_Agency_Fee}}</div>
+                <v-flex xs9 md9>
+                    <div class="ma-3">{{dessert.Shipping_Agency_Fee}}</div>
                 </v-flex>
-                <v-divider></v-divider>
+              
                 
-                <v-flex xs6 md6>
+                <v-flex xs3 md3>
                     <div class="ma-3"> CI</div>
                     
                 </v-flex>
-                <v-flex xs6 md6>
-                    <div class="ma-3">{{desserts.CI}}</div>
+                <v-flex xs9 md9>
+                    <div class="ma-3">{{dessert.CI}}</div>
                 </v-flex>
-                <v-divider></v-divider>
-                <v-flex xs6 md6>
+               
+                <v-flex xs3 md3>
                     <div class="ma-3"> CIF</div>
                     
                 </v-flex>
-                <v-flex xs6 md6>
-                    <div class="ma-3">{{desserts.CIF}}</div>
+                <v-flex xs9 md9>
+                    <div class="ma-3">{{dessert.CIF}}</div>
                 </v-flex>
-                <v-divider></v-divider>
-                <v-flex xs6 md6>
+               
+                <v-flex xs3 md3>
                     <div class="ma-3"> Exchange_Rate</div>
                     
                 </v-flex>
-                <v-flex xs6 md6>
-                    <div class="ma-3">{{desserts.Exchange_Rate}}</div>
+                <v-flex xs9 md9>
+                    <div class="ma-3">{{dessert.Exchange_Rate}}</div>
                 </v-flex>
-                <v-divider></v-divider>
-                <v-flex xs6 md6>
+              
+                <v-flex xs3 md3>
                     <div class="ma-3"> Other_Charges</div>
                     
                 </v-flex>
-                <v-flex xs6 md6>
-                    <div class="ma-3">{{desserts.Other_Charges}}</div>
+                <v-flex xs9 md9>
+                    <div class="ma-3">{{dessert.Other_Charges}}</div>
                 </v-flex>
-                <v-divider></v-divider>
-                <v-flex xs6 md6>
+               
+                <v-flex xs3 md3>
                     <div class="ma-3"> IMP_Duty</div>
                     
                 </v-flex>
-                <v-flex xs6 md6>
-                    <div class="ma-3">{{desserts.IMP_Duty}}</div>
+                <v-flex xs9 md9>
+                    <div class="ma-3">{{dessert.IMP_Duty}}</div>
                 </v-flex>
-                <v-divider></v-divider>
-                <v-flex xs6 md6>
+                
+                <v-flex xs3 md3>
                     <div class="ma-3"> Infrastructure_levy</div>
                     
                 </v-flex>
-                <v-flex xs6 md6>
-                    <div class="ma-3">{{desserts.Infrastructure_levy}}</div>
+                <v-flex xs9 md9>
+                    <div class="ma-3">{{dessert.Infrastructure_levy}}</div>
                 </v-flex>
-                <v-divider></v-divider>
-                <v-flex xs6 md6>
+              
+                <v-flex xs3 md3>
                     <div class="ma-3"> Withholding_tax</div>
                     
                 </v-flex>
-                <v-flex xs6 md6>
-                    <div class="ma-3">{{desserts.Withholding_tax}}</div>
+                <v-flex xs9 md9>
+                    <div class="ma-3">{{dessert.Withholding_tax}}</div>
                 </v-flex>
-                <v-divider></v-divider>
-                <v-flex xs6 md6>
+               
+                <v-flex xs3 md3>
                     <div class="ma-3"> VAT</div>
                     
                 </v-flex>
-                <v-flex xs6 md6>
-                    <div class="ma-3">{{desserts.VAT}}</div>
+                <v-flex xs9 md9>
+                    <div class="ma-3">{{dessert.VAT}}</div>
                 </v-flex>
-                <v-divider></v-divider>
-                <v-flex xs6 md6>
+                
+                <v-flex xs3 md3>
                     <div class="ma-3"> Total</div>
                     
                 </v-flex>
-                <v-flex  xs6 md6>
-                    <div class="ma-3">{{desserts.FOB}}</div>
+                <v-flex xs9 md9>
+                    <div class="ma-3">{{dessert.Total}}</div>
                 </v-flex>
-                <v-divider></v-divider>
-                <v-flex xs6 md6>
+                
+                <v-flex xs3 md3>
                     <div class="ma-3"> LCF</div>
                     
                 </v-flex>
-                <v-flex  xs6 md6>
+
+                <v-flex  xs9 md9>
                     <div class="ma-3">{{desserts.LCF}}</div>
                 </v-flex>
-                <v-divider></v-divider>
+            
                 
 
             </v-layout>
