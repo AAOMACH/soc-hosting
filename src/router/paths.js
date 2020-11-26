@@ -35,7 +35,7 @@ export default [
      
       
        else {
-           next('/dashboard')
+           next()
        }
      },
      children: [
