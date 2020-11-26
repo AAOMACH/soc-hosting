@@ -175,9 +175,9 @@ import axios from 'axios'
     login: function () {
       let username = this.username;
       let password = this.password;
-      console.log("here");
+      //console.log("here");
       this.$store.dispatch('loginuser', { username, password })
-        .then(() => this.$router.push('/'))
+        .then(() => this.$router.push('/dashboard'))
         .catch(err => {
         console.log(err)
         this.snackbar= true

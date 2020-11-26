@@ -35,7 +35,7 @@ export default [
      
       
        else {
-           next()
+           next('/dashboard')
        }
      },
      children: [
@@ -50,7 +50,7 @@ export default [
     path: '/dashboard',
     meta: {
       name: 'Dashboard',
-      requiresAuth: true
+      requiresAuth: false
     },
     component: () => import(`@/views/DashboardView.vue`),
     
@@ -59,7 +59,7 @@ export default [
     path: '/inventorycontrol',
     meta: {
       name: 'InventoryControl',
-      requiresAuth: true
+      requiresAuth: false
     },
     component: () => import(`@/views/InventoryView.vue`),
     
@@ -68,7 +68,7 @@ export default [
     path: '/stocktracking',
     meta: {
       name: 'stocktracking',
-      requiresAuth: true
+      requiresAuth: false
     },
     component: () => import(`@/views/TrackingView.vue`),
     
@@ -77,7 +77,7 @@ export default [
     path: '/ordered',
     meta: {
       name: 'ordered',
-      requiresAuth: true
+      requiresAuth: false
     },
     component: () => import(`@/views/OrderedView.vue`),
     
@@ -87,7 +87,7 @@ export default [
     path: '/cost',
     meta: {
       name: 'cost',
-      requiresAuth: true
+      requiresAuth: false
     },
     component: () => import(`@/views/CostView.vue`),
     
@@ -96,7 +96,7 @@ export default [
     path: '/warehousing',
     meta: {
       name: 'warehousing',
-      requiresAuth: true
+      requiresAuth: false
     },
     component: () => import(`@/views/Warehousing.vue`),
     
