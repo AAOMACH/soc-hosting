@@ -56,6 +56,109 @@
 
         </v-card>
 
+        <v-card>
+            <v-card-title>Costing</v-card-title>
+            <v-layout row wrap>
+
+                <v-flex xs6 md6>
+                    <div class="my-2"> FOB</div>
+                    
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2">{{desserts.FOB}}</div>
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2"> Air_Freight_charge</div>
+                    
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2">{{desserts.Air_Freight_charge}}</div>
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2"> Shipping_Agency_Fee</div>
+                    
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2">{{desserts.Shipping_Agency_Fee}}</div>
+                </v-flex>
+                
+                
+                <v-flex xs6 md6>
+                    <div class="my-2"> CI</div>
+                    
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2">{{desserts.CI}}</div>
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2"> CIF</div>
+                    
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2">{{desserts.CIF}}</div>
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2"> Exchange_Rate</div>
+                    
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2">{{desserts.Exchange_Rate}}</div>
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2"> Other_Charges</div>
+                    
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2">{{desserts.Other_Charges}}</div>
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2"> IMP_Duty</div>
+                    
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2">{{desserts.IMP_Duty}}</div>
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2"> Infrastructure_levy</div>
+                    
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2">{{desserts.Infrastructure_levy}}</div>
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2"> Withholding_tax</div>
+                    
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2">{{desserts.Withholding_tax}}</div>
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2"> VAT</div>
+                    
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2">{{desserts.VAT}}</div>
+                </v-flex>
+
+                <v-flex xs6 md6>
+                    <div class="my-2"> Total</div>
+                    
+                </v-flex>
+                <v-flex  xs6 md6>
+                    <div class="my-2">{{desserts.FOB}}</div>
+                </v-flex>
+                <v-flex xs6 md6>
+                    <div class="my-2"> LCF</div>
+                    
+                </v-flex>
+                <v-flex  xs6 md6>
+                    <div class="my-2">{{desserts.LCF}}</div>
+                </v-flex>
+                
+
+            </v-layout>
+        </v-card>
+
             <template>
                 <v-card class="ma-5">
                     
