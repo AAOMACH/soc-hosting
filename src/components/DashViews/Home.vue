@@ -19,7 +19,7 @@
                         <!--<v-card-subtitle class="mx-5">INVENTORY CONTROL</v-card-subtitle>-->
 
                         <v-card-actions>
-                        <v-btn text @click="movetoinventorycontrol()"
+                        <v-btn v-if="designation=='inventory'" text @click="movetoinventorycontrol()"
                         color="teal">
                             View
                         </v-btn>
@@ -47,7 +47,7 @@
 
                             <v-card-actions>
                             <v-btn
-                                v-if="item.artist === 'ORDERING, TRACKING AND COSTING ANALYSIS'"
+                                v-if="item.artist === 'ORDERING, TRACKING AND COSTING ANALYSIS' && designation=='ordering'"
                                 @click="movetostocktracking()"
                                 color="teal"
                                 
@@ -57,7 +57,8 @@
                             </v-btn>
 
                             <v-btn
-                                v-else
+                                v-else-if="item.artist === 'WAREHOUSING' && designation=='ordering'"
+                                
                                 small
                                 @click="movetowarehousing()"
                                 color="teal"
@@ -104,10 +105,14 @@ export default {
           artist: 'WAREHOUSING',
         },
       ],
+      designation: "",
     }),
 
     components:{
         
+    },
+    created(){
+        this.designation = localStorage.getItem('Designation')
     },
 
     methods:{
