@@ -56,7 +56,7 @@
 
         </v-card>
 
-        <v-card>
+        <v-card flat class="white" v-for="(dessert,index) in desserts" :key="dessert.id">
             <v-card-title>Costing</v-card-title>
             <v-layout row wrap>
                 <v-divider></v-divider>
@@ -65,7 +65,7 @@
                     
                 </v-flex>
                 <v-flex xs6 md6>
-                    <div class="ma-3">{{fob}}</div>
+                    <div class="ma-3">{{dessert.FOB}}</div>
                 </v-flex>
                 <v-divider></v-divider>
                 <v-flex xs6 md6>
