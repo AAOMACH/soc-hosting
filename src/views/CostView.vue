@@ -279,8 +279,8 @@ export default {
         axios.get("https://educationdb67.pythonanywhere.com/viewcost")
         .then(
             reponse => {
-                //this.desserts = reponse.data
-                this.fob = response.data.FOB
+                this.desserts = reponse.data
+                //this.fob = response.data.FOB
             }
         )
     },
