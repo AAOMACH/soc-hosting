@@ -19,7 +19,7 @@
                         <!--<v-card-subtitle class="mx-5">INVENTORY CONTROL</v-card-subtitle>-->
 
                         <v-card-actions>
-                        <v-btn v-if="designation=='inventory'" text @click="movetoinventorycontrol()"
+                        <v-btn text @click="movetoinventorycontrol()"
                         color="teal">
                             View
                         </v-btn>
@@ -47,7 +47,7 @@
 
                             <v-card-actions>
                             <v-btn
-                                v-if="item.artist === 'ORDERING, TRACKING AND COSTING ANALYSIS' && designation=='ordering'"
+                                v-if="item.artist === 'ORDERING, TRACKING AND COSTING ANALYSIS'"
                                 @click="movetostocktracking()"
                                 color="teal"
                                 
@@ -57,7 +57,7 @@
                             </v-btn>
 
                             <v-btn
-                                v-else-if="item.artist === 'WAREHOUSING' && designation=='ordering'"
+                                v-else-if="item.artist === 'WAREHOUSING'"
                                 
                                 small
                                 @click="movetowarehousing()"
